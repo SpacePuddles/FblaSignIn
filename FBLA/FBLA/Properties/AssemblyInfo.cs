@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("FBLA")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Cheney School District")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("FBLA")]
-[assembly: AssemblyCopyright("Copyright © Cheney School District 2016")]
+[assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("d278211c-e81c-4d2f-8bc8-6f8c51410c25")]
+[assembly: Guid("e011c04e-f771-4ba6-a7e3-98d3aedf64d6")]
 
 // Version information for an assembly consists of the following four values:
 //
