@@ -24,31 +24,20 @@
         /// </summary>
         private void InitializeComponent() {
             this.button1 = new MetroFramework.Controls.MetroButton();
-            this.button2 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(56, 87);
+            this.button1.Location = new System.Drawing.Point(23, 54);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 86);
+            this.button1.Size = new System.Drawing.Size(233, 229);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Login";
+            this.button1.Text = "TAKE ME TO THE MENU BABY";
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(56, 179);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(168, 86);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Register";
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(279, 306);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.ResumeLayout(false);
@@ -61,7 +50,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private MetroFramework.Controls.MetroButton button1;
-        private MetroFramework.Controls.MetroButton button2;
     }
 }
 

@@ -21,5 +21,20 @@ namespace FBLA {
         private void button1_Click(object sender, EventArgs e) {
 
         }
+
+        // Takes the person to the student management thing
+        private void metroTile2_Click(object sender, EventArgs e) {
+            new StudentView().Show();
+        }
+
+        // Closes the window. Returns to login screen.
+        private void metroButton2_Click(object sender, EventArgs e) {
+            this.Close();
+        }
+
+        // Takes user to account thing to change password and do other things.
+        private void button2_Click(object sender, EventArgs e) {
+            new AdminAccount().Show();
+        }
     }
 }

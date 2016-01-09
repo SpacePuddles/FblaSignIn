@@ -19,15 +19,11 @@ namespace FBLA {
             
         }
 
-        // Login Button
         private void button1_Click(object sender, EventArgs e) {
-            new Admin().Show();
-            
-        }
-
-        // Register Button
-        private void button2_Click(object sender, EventArgs e) {
-            //new Register().Show();
+            // Hides the login form so multiple windows can't be opened.
+            this.Hide();
+            new Admin().ShowDialog();
+            this.Show();
         }
     }
 }

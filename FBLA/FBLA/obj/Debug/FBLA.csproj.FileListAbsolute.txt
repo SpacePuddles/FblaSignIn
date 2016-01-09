@@ -9,5 +9,6 @@ c:\users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\bin\Debug\MetroFr
 c:\users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\bin\Debug\MetroFramework.Fonts.dll
 c:\users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\obj\Debug\FBLA.exe
 c:\users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\obj\Debug\FBLA.pdb
-c:\users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\obj\Debug\FBLA.Login.resources
 C:\Users\afrea\Documents\Visual Studio 2015\Projects\FBLA\FBLA\obj\Debug\FBLA.Admin.resources
+C:\Users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\obj\Debug\FBLA.StudentView.resources
+C:\Users\afrea\documents\visual studio 2015\Projects\FBLA\FBLA\obj\Debug\FBLA.AdminAccount.resources
