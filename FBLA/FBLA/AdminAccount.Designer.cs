@@ -36,6 +36,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Change Password";
             this.button2.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // metroButton1
             // 
@@ -43,7 +44,7 @@
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(165, 56);
             this.metroButton1.TabIndex = 5;
-            this.metroButton1.Text = "Maybe Something Else";
+            this.metroButton1.Text = "Add Admin";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroButton2
