@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,21 +16,23 @@ namespace FBLA {
         }
 
         private void StudentView_Load(object sender, EventArgs e) {
-
+            this.Text = "Student View";
         }
 
         private void metroButton3_Click(object sender, EventArgs e) {
             this.Close();
         }
         
-        // We could use this to populate a database looking list. If we need it anyway.
+        // We could use this to populate a database looking list. If we need it, anyway.
         private void populate() {
             SqlCommand cmd;
-            SqlReader reader;
+            SqlDataReader reader;
             string sql;
+            List<Student> tmp_ppl = new List<Student>();
             
             using (SqlConnection con = new SqlConnection()) {
-                string id, fname, lname, grade, studentid, fblaid, teamstring, eventstring;
+                Student tmp;
+                string id, fname, lname, grade, studentid, fblaid, teamstring, eventstring, altstring;
                 sql = "SELECT * FROM DBO.Users;";
                 cmd = new SqlCommand(sql);
                 
@@ -46,10 +49,21 @@ namespace FBLA {
                     fblaid = reader["[FBLA ID]"].ToString();
                     teamstring = reader["[Team IDs]"].ToString();
                     eventstring = reader["[Event IDs]"].ToString();
+                    altstring = reader["Alternates"].ToString();
+
+                    tmp = new Student(Int32.Parse(id), fname, lname, studentid, fblaid, Int32.Parse(grade));
+                    tmp.EventString = eventstring;
+                    tmp.TeamString = teamstring;
+                    tmp.AltString = altstring;
+
+                    tmp_ppl.Add(tmp);
                 }
+
+                con.Close();
                 
-                //Close con and make student later
             }
+
+            // Add stuff to a view here.
         }
     }
 }

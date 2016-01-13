@@ -13,6 +13,7 @@ namespace FBLA {
         private string fblaID;
         private string teamString;
         private string eventString;
+        private string altString;
         private int grade;
 
         public Student(int id, string firstName, string lastName, string studentID, int grade) {
@@ -67,6 +68,11 @@ namespace FBLA {
             set { eventString = value; }
         }
 
+        public string AltString {
+            get { return altString; }
+            set { altString = value; }
+        }
+
         public int Grade {
             get { return grade; }
             set { grade = value; }
@@ -76,7 +82,7 @@ namespace FBLA {
             List<int> teams = new List<int>();
 
             string[] tmp = teamString.Split(',');
-            foreach(string y in tmp) {
+            foreach (string y in tmp) {
                 int x = 0;
                 x = Int32.Parse(y);
                 teams.Add(x);
@@ -89,7 +95,7 @@ namespace FBLA {
             List<int> events = new List<int>();
 
             string[] tmp = eventString.Split(',');
-            foreach(string y in tmp) {
+            foreach (string y in tmp) {
                 int x = 0;
                 x = Int32.Parse(y);
                 events.Add(x);
@@ -97,4 +103,18 @@ namespace FBLA {
 
             return events;
         }
+
+        public List<int> getAltIDs() {
+            List<int> events = new List<int>();
+
+            string[] tmp = altString.Split(',');
+            foreach (string y in tmp) {
+                int x = 0;
+                x = Int32.Parse(y);
+                events.Add(x);
+            }
+
+            return events;
+        }
+    }
 }

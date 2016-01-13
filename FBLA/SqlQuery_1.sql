@@ -11,23 +11,26 @@ CREATE TABLE DBO.[Events]
 GO
 
 CREATE TABLE DBO.Teams
-	(ID INT IDENTITY(1, 1) PRIMARY KEY) -- Maybe make more better table later
+	(ID INT IDENTITY(1, 1) PRIMARY KEY,
+	 [Event IDs] NVARCHAR(20) NOT NULL) -- Maybe make more better table later
 GO
 
 CREATE TABLE DBO.Users -- Make table better. Later.
 	(ID INT IDENTITY(1, 1) PRIMARY KEY,
 	 [First Name] VARCHAR(30) NOT NULL,
 	 [Last Name] VARCHAR(30) NOT NULL,
-	 [Student ID] NVARCHAR(20) NOT NULL,
+	 [Student ID] NVARCHAR(7) NOT NULL,
 	 Grade INT NOT NULL,
-	 [FBLA ID] NVARCHAR(10) NULL,
-	 [Team IDs] VARCHAR(50) NULL, -- Possibly make a better storing method.
-	 [Event IDs] VARCHAR(50) NULL) -- Same here.
+	 [FBLA ID] NVARCHAR(7) NULL,
+	 [Team IDs] VARCHAR(20) NULL, -- Possibly make a better storing method.
+	 [Event IDs] VARCHAR(20) NULL,
+	 Alternates VARCHAR(20) NULL,
+	 [Universal Password] NVARCHAR(30) NOT NULL DEFAULT 'FBLA') -- Same here.
 GO
 
 CREATE TABLE DBO.Admins
 	(ID INT IDENTITY(1, 1) PRIMARY KEY,
-	 username NVARCHAR(30) NOT NULL,
-	 [password] NVARCHAR(900) NOT NULL)
+	 Username NVARCHAR(30) NOT NULL,
+	 [Password] NVARCHAR(256) NOT NULL)
 GO
 
