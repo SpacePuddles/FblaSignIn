@@ -1,0 +1,12 @@
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\bin\Debug\FBLASignIn.exe.config
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\bin\Debug\FBLASignIn.exe
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\bin\Debug\FBLASignIn.pdb
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.csprojResolveAssemblyReference.cache
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.LogIn.resources
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.NewStudent.resources
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.Properties.Resources.resources
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.csproj.GenerateResource.Cache
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.exe
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.pdb
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.SignUp.resources
+D:\VisualStudio with your pal Tea\FBLASignIn\FBLASignIn\obj\Debug\FBLASignIn.StudentMain.resources
