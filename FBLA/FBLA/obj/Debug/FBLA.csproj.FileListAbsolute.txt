@@ -46,3 +46,22 @@ D:\YAY FBLA YAY\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.csproj.GenerateResource.Cach
 D:\YAY FBLA YAY\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.LogIn.resources
 D:\YAY FBLA YAY\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.SignUp.resources
 D:\YAY FBLA YAY\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.StudentMain.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\bin\Debug\FBLA.exe.config
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.exe
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.pdb
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\bin\Debug\FBLA.exe
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\bin\Debug\FBLA.pdb
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\bin\Debug\MetroFramework.dll
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.csprojResolveAssemblyReference.cache
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.Admin.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.AdminAccount.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.ChangeAdminPassword.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.Form1.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.LogIn.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLASignIn.NewStudent.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.Properties.Resources.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.SignUp.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.StudentMain.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.StudentView.resources
+C:\Users\afrea\Documents\GitHub\FblaSignIn\FBLA\FBLA\obj\Debug\FBLA.csproj.GenerateResource.Cache

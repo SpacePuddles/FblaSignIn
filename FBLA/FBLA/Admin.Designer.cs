@@ -112,6 +112,7 @@
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.button1);
             this.Name = "Admin";
+            this.Resizable = false;
             this.Text = "Admin";
             this.Theme = MetroFramework.MetroThemeStyle.Light;
             this.Load += new System.EventHandler(this.Admin_Load);

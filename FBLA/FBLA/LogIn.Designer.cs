@@ -28,65 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Sign_Up = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.maskedTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.button1 = new MetroFramework.Controls.MetroButton();
+            this.Sign_Up = new MetroFramework.Controls.MetroButton();
+            this.label1 = new MetroFramework.Controls.MetroLabel();
+            this.label2 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(69, 120);
+            this.maskedTextBox1.CustomBackground = true;
+            this.maskedTextBox1.Location = new System.Drawing.Point(69, 101);
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(149, 20);
             this.maskedTextBox1.TabIndex = 0;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(69, 161);
+            this.maskedTextBox2.CustomBackground = true;
+            this.maskedTextBox2.Location = new System.Drawing.Point(69, 151);
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(149, 20);
             this.maskedTextBox2.TabIndex = 1;
-            this.maskedTextBox2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox2_MaskInputRejected);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(105, 195);
+            this.button1.Location = new System.Drawing.Point(65, 208);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Log In ";
-            this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Sign_Up
             // 
-            this.Sign_Up.Location = new System.Drawing.Point(12, 12);
+            this.Sign_Up.Location = new System.Drawing.Point(146, 208);
             this.Sign_Up.Name = "Sign_Up";
-            this.Sign_Up.Size = new System.Drawing.Size(75, 23);
+            this.Sign_Up.Size = new System.Drawing.Size(75, 31);
             this.Sign_Up.TabIndex = 3;
             this.Sign_Up.Text = "Sign Up";
-            this.Sign_Up.UseVisualStyleBackColor = true;
             this.Sign_Up.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 104);
+            this.label1.Location = new System.Drawing.Point(106, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(75, 19);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Name";
+            this.label1.Text = "User Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 145);
+            this.label2.Location = new System.Drawing.Point(109, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
+            this.label2.Size = new System.Drawing.Size(63, 19);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -103,7 +102,7 @@
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
             this.Name = "LogIn";
-            this.Text = "                                     ";
+            this.Resizable = false;
             this.Load += new System.EventHandler(this.LogIn_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -112,12 +111,12 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button Sign_Up;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private MetroFramework.Controls.MetroTextBox maskedTextBox1;
+        private MetroFramework.Controls.MetroTextBox maskedTextBox2;
+        private MetroFramework.Controls.MetroButton button1;
+        private MetroFramework.Controls.MetroButton Sign_Up;
+        private MetroFramework.Controls.MetroLabel label1;
+        private MetroFramework.Controls.MetroLabel label2;
     }
 }
 
