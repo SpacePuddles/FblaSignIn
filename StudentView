@@ -31,6 +31,7 @@ namespace SQL_Test
             this.studentsTableAdapter.Fill(this.studentDataDataSet.Students);
             button1.Enabled = false;
             studentsBindingSource.Filter = "id = " + studentId;
+            //shows the table via sql injection
             
 
         }
