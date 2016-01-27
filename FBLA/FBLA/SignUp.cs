@@ -36,57 +36,7 @@ namespace FBLA {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-
-            // all the variables
-            String firstname = first_name.Text;
-            String lastname = last_name.Text;
-            String studentid = student_id.Text;
-            String fblaid = fbla_id.Text;
-            int grade = 0;
-
-            // what grade 
-            /*if (N_Grd.Checked || T_Grd.Checked || E_Grd.Checked || Tw_Grd.Checked)
-            {
-                if (N_Grd.Checked && !T_Grd.Checked && !E_Grd.Checked && !Tw_Grd.Checked)
-                {
-                    grade = 9; 
-                }
-                else if (T_Grd.Checked && !N_Grd.Checked && !E_Grd.Checked && !Tw_Grd.Checked)
-                {
-                    grade = 10;
-                }
-                else if (E_Grd.Checked && !N_Grd.Checked && !T_Grd.Checked && !Tw_Grd.Checked)
-                {
-                    grade = 11;
-                }
-                else if(Tw_Grd.Checked && !N_Grd.Checked && !T_Grd.Checked && !E_Grd.Checked)
-                {
-                    grade = 12;
-                }
-            }*/
-
-
-            // Above was a bit redundant. 
-            if (N_Grd.Checked == true)
-                grade = 9;
-            else if (T_Grd.Checked == true)
-                grade = 10;
-            else if (E_Grd.Checked == true)
-                grade = 11;
-            else if (Tw_Grd.Checked == true)
-                grade = 12;
-
-            if (firstname != null && lastname != null && student_id != null && fblaid != null && grade != 0) {
-                //create new student here
-
-                this.Hide();
-                new LogIn().Show();
-            } else {
-                MessageBox.Show("Unfilled field, please fill out all fields");
-            }
-
-
-
+            Signup();
         }
 
         private void button2_Click(object sender, EventArgs e) {
@@ -129,6 +79,56 @@ namespace FBLA {
 
         private void label4_Click(object sender, EventArgs e) {
 
+        }
+
+        private void Signup() {
+            // all the variables
+            String firstname = first_name.Text;
+            String lastname = last_name.Text;
+            String studentid = student_id.Text;
+            String fblaid = fbla_id.Text;
+            int grade = 0;
+
+            // what grade 
+            /*if (N_Grd.Checked || T_Grd.Checked || E_Grd.Checked || Tw_Grd.Checked)
+            {
+                if (N_Grd.Checked && !T_Grd.Checked && !E_Grd.Checked && !Tw_Grd.Checked)
+                {
+                    grade = 9; 
+                }
+                else if (T_Grd.Checked && !N_Grd.Checked && !E_Grd.Checked && !Tw_Grd.Checked)
+                {
+                    grade = 10;
+                }
+                else if (E_Grd.Checked && !N_Grd.Checked && !T_Grd.Checked && !Tw_Grd.Checked)
+                {
+                    grade = 11;
+                }
+                else if(Tw_Grd.Checked && !N_Grd.Checked && !T_Grd.Checked && !E_Grd.Checked)
+                {
+                    grade = 12;
+                }
+            }*/
+
+
+            // Above was a bit redundant. 
+            if (N_Grd.Checked == true)
+                grade = 9;
+            else if (T_Grd.Checked == true)
+                grade = 10;
+            else if (E_Grd.Checked == true)
+                grade = 11;
+            else if (Tw_Grd.Checked == true)
+                grade = 12;
+
+            if (firstname != null && lastname != null && student_id != null && fblaid != null && grade != 0) {
+                //create new student here
+
+                this.Close();
+                new LogIn().Show();
+            } else {
+                MessageBox.Show("Unfilled field, please fill out all fields");
+            }
         }
     }
 }
