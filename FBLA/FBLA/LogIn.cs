@@ -12,21 +12,11 @@ using System.Windows.Forms;
 
 namespace FBLA {
     public partial class LogIn : MetroFramework.Forms.MetroForm {
-        //The Universal Password
-        String UniPassword;
-        //Array of Usernames 
-        String[] UserIds = { "123" };
-        //Correct Username and Password correlation 
-        String[] Admins = { "123" };
-        String AdminPassword = "123";
-
         public LogIn() {
             InitializeComponent();
             this.CenterToScreen();
 
             this.Text = "Login";
-
-            
         }
 
         private void maskedTextBox2_MaskInputRejected(object sender, MaskInputRejectedEventArgs e) {
@@ -72,31 +62,17 @@ namespace FBLA {
         }
 
         private string getPassword() {
-            string sql;
-            string pword = string.Empty;
-            SqlCommand cmd;
-            SqlDataReader reader;
+            string password = String.Empty;
 
-            using (SqlConnection con = new SqlConnection()) {
-                sql = "SELECT [Universal Password] FROM dbo.[Universal Password];";
-                cmd = new SqlCommand(sql);
-                cmd.Connection = con;
-                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\afrea\\Documents\\GitHub\\FblaSignIn\\FBLA\\FBLA\\fbla.mdf;Integrated Security=True";
+            var connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\afrea\\Documents\\GitHub\\FblaSignIn\\FBLA\\FBLA\\fbla.mdf;Integrated Security=True");
+            connection.Open();
 
-                con.Open();
-                reader = cmd.ExecuteReader();
-
-                while (reader.Read()) {
-                    pword = reader[0].ToString();
-                }
-
-                reader.Close();
-                con.Close();
-
-                return pword;
+            using (var command = new SqlCommand("@UNI_PASSWORD", connection))
+            using (var reader = command.ExecuteReader()) {
+                  password = reader.GetValue(0).ToString();
             }
 
-            return pword;
+            return password;
         }
 
         private Boolean UserExists() {

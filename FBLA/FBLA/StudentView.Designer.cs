@@ -54,7 +54,7 @@
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(165, 56);
             this.metroButton2.TabIndex = 6;
-            this.metroButton2.Text = "Export to CSV";
+            this.metroButton2.Text = "Export";
             this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroButton3

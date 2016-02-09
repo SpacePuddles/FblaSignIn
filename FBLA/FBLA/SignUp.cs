@@ -123,11 +123,34 @@ namespace FBLA {
 
             if (firstname != null && lastname != null && student_id != null && fblaid != null && grade != 0) {
                 //create new student here
-
+                Insert(grade, firstname, lastname, studentid, fblaid);
                 this.Close();
                 new LogIn().Show();
             } else {
-                MessageBox.Show("Unfilled field, please fill out all fields");
+                MessageBox.Show("Unfilled field, please fill out all fields", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Insert(int grade, string fname, string lname, string studentid, string fblaid) {
+            string sql;
+            SqlCommand cmd;
+
+            using (SqlConnection con = new SqlConnection()) {
+                sql = "INSERT INTO dbo.Users (Grade, [First Name], [Last Name], [Student ID], [FBLA ID]) VALUES (@grade, @fname, @lname, @studentid, @fblaid);";
+                cmd = new SqlCommand(sql);
+                cmd.Connection = con;
+                con.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\afrea\\Documents\\GitHub\\FblaSignIn\\FBLA\\FBLA\\fbla.mdf;Integrated Security=True";
+
+                con.Open();
+
+                cmd.Parameters.AddWithValue("@fname", fname);
+                cmd.Parameters.AddWithValue("@lname", lname);
+                cmd.Parameters.AddWithValue("@studentid", studentid);
+                cmd.Parameters.AddWithValue("@fblaid", fblaid);
+                cmd.Parameters.AddWithValue("@grade", grade);
+                cmd.ExecuteNonQuery();
+
+                con.Close();
             }
         }
     }

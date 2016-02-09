@@ -36,5 +36,9 @@ namespace FBLA {
         private void button2_Click(object sender, EventArgs e) {
             new AdminAccount().Show();
         }
+
+        private void metroTile1_Click(object sender, EventArgs e) {
+            CoolClass.MakeMeAnExcel();
+        }
     }
 }
